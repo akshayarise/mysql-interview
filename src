@@ -1,2 +1,3 @@
 Q1. How to find the duplicate row in the table?
 Solve. select * from Google.customers where name = (select  name from Google.customers group by name having count(name)>1); 
+
