@@ -1,3 +1,8 @@
 Q1. How to find the duplicate row in the table?
 Solve. select * from Google.customers where name = (select  name from Google.customers group by name having count(name)>1); 
 
+Q2. How to create the view?
+solve. create view custom as select * from customers;
+
+Q3. How to select the data from the View?
+solve. select * from view-name;
